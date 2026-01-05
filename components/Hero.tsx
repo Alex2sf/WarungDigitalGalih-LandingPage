@@ -2,15 +2,15 @@ import { ArrowRight, PlayCircle } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section id="hero" className="relative pt-20 pb-32 overflow-hidden bg-gradient-to-b from-orange-50/50 to-white">
+        <section id="hero" className="relative pt-12 md:pt-20 pb-20 md:pb-32 overflow-hidden bg-gradient-to-b from-orange-50/50 to-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Text Content */}
-                    <div className="text-center lg:text-left space-y-8">
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 text-brand-orange text-sm font-semibold mb-2">
+                    <div className="text-center lg:text-left space-y-6 md:space-y-8">
+                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 text-brand-orange text-xs md:text-sm font-semibold mb-2">
                             <span className="animate-pulse mr-2">●</span> Solusi Digital UMKM
                         </div>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-[1.2] md:leading-tight">
                             Kasir Digital Simpel Buat <span className="text-brand-orange">Warung & Kedai</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">

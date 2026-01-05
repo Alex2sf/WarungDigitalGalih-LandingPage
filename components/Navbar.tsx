@@ -23,7 +23,7 @@ export default function Navbar() {
                         <div className="w-8 h-8 bg-brand-orange rounded-lg flex items-center justify-center text-white">
                             <ShoppingBag size={20} />
                         </div>
-                        <span className="font-display font-bold text-xl text-gray-900 tracking-tight">
+                        <span className="font-display font-bold text-lg md:text-xl text-gray-900 tracking-tight">
                             Warung Digital Galih
                         </span>
                     </div>

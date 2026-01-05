@@ -10,7 +10,7 @@ export default function Portfolio() {
         },
         {
             title: "Penggunaan Kasir Digital UMKM",
-            src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            src: "https://www.youtube.com/embed/uKU-EpmYMYs",
         }
     ];
 

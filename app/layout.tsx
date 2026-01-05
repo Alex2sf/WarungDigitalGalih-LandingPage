@@ -20,6 +20,12 @@ export const metadata: Metadata = {
   description: "Aplikasi kasir digital simpel untuk warung dan kedai UMKM. Catat transaksi, kelola stok, dan laporan otomatis.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

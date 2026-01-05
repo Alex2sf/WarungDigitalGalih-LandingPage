@@ -11,7 +11,7 @@ export default function CTA() {
                     Konsultasi gratis sekarang juga. Kami siap membantu digitalisasi usaha Anda.
                 </p>
                 <a
-                    href="https://wa.me/62897854410"
+                    href="https://wa.me/628978544104"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-green-500 rounded-full hover:bg-green-600 transition-all shadow-lg hover:shadow-green-500/30 transform hover:-translate-y-1"

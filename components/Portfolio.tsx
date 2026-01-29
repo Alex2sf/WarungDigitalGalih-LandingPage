@@ -1,8 +1,8 @@
 export default function Portfolio() {
     const portfolios = [
         {
-            title: "Demo Kasir Kedai Kopi",
-            src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            title: "DEMO KASIR DIGITAL KEDAI KOPI",
+            src: "https://www.youtube.com/embed/vwJV_d-M6V8",
         },
         {
             title: "DEMO KASIR DIGITAL TOKO KELONTONG",

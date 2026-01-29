@@ -5,11 +5,11 @@ export default function Portfolio() {
             src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         },
         {
-            title: "Studi Kasus Warung Harian",
-            src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            title: "DEMO KASIR DIGITAL TOKO KELONTONG",
+            src: "https://www.youtube.com/embed/V9Dq0Pubeew",
         },
         {
-            title: "Penggunaan Kasir Digital UMKM",
+            title: "DEMO KASIR DIGITAL DEPOT AIR",
             src: "https://www.youtube.com/embed/uKU-EpmYMYs",
         }
     ];

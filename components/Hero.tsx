@@ -1,105 +1,88 @@
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section id="hero" className="relative pt-12 md:pt-20 pb-20 md:pb-32 overflow-hidden bg-gradient-to-b from-orange-50/50 to-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Text Content */}
-                    <div className="text-center lg:text-left space-y-6 md:space-y-8">
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 text-brand-orange text-xs md:text-sm font-semibold mb-2">
-                            <span className="animate-pulse mr-2">●</span> Solusi Digital UMKM
-                        </div>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-[1.2] md:leading-tight">
-                            Kasir Digital Simpel Buat <span className="text-brand-orange">Warung & Kedai</span>
-                        </h1>
-                        <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                            Catat transaksi, kelola stok, dan laporan otomatis tanpa ribet. Fokus kembangkan usaha, biar kami yang urus hitungannya.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <a
-                                href="#demo"
-                                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand-orange rounded-full hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1"
-                            >
-                                Lihat Demo
-                                <ArrowRight className="ml-2 w-5 h-5" />
-                            </a>
-                            <a
-                                href="#portfolio"
-                                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-gray-700 bg-white border-2 border-gray-200 rounded-full hover:border-brand-orange hover:text-brand-orange transition-all"
-                            >
-                                <PlayCircle className="mr-2 w-5 h-5" />
-                                Lihat Portofolio
-                            </a>
-                        </div>
+        <section id="hero" className="relative min-h-screen flex items-center bg-black overflow-hidden">
+            {/* Background grid */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-40"></div>
+            {/* Radial fade */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,#000_70%)]"></div>
+            {/* Ambient glow */}
+            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.03] rounded-full blur-[100px]"></div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-20">
+                <div className="flex flex-col items-center text-center space-y-8">
+                    {/* Badge */}
+                    <div className="inline-flex items-center px-5 py-2.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-zinc-400 text-sm font-medium backdrop-blur-sm">
+                        <span className="w-2 h-2 rounded-full bg-white mr-3 animate-pulse"></span>
+                        Solusi Digital UMKM Indonesia
                     </div>
 
-                    {/* Visual Content (Mockup Placeholder) */}
-                    <div className="relative mt-8 lg:mt-0">
-                        {/* Decorative blob */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-orange/20 to-brand-green/20 rounded-full blur-3xl -z-10"></div>
+                    {/* Headline */}
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-extrabold text-white tracking-tight leading-[1.1] max-w-5xl">
+                        Kasir Digital
+                        <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 to-zinc-600">Simpel Buat</span>
+                        <br />
+                        Warung & Kedai
+                    </h1>
 
-                        <div className="relative bg-gray-900 rounded-[2.5rem] shadow-2xl p-4 border-4 border-gray-900 mx-auto max-w-[280px] md:max-w-[320px] aspect-[9/19] overflow-hidden">
-                            {/* Phone Screen Mockup */}
-                            <div className="bg-white h-full w-full rounded-[2rem] overflow-hidden flex flex-col relative">
-                                {/* Status Bar */}
-                                <div className="h-8 bg-brand-green w-full flex justify-between px-6 items-center text-[10px] text-white font-bold">
-                                    <span>12:30</span>
-                                    <div className="flex gap-1">
-                                        <div className="w-3 h-3 bg-white/50 rounded-full"></div>
-                                        <div className="w-3 h-3 bg-white/50 rounded-full"></div>
-                                    </div>
-                                </div>
-                                {/* App Header */}
-                                <div className="p-6 bg-white border-b border-gray-100 flex justify-between items-center">
-                                    <div>
-                                        <div className="text-xs text-gray-500">Halo, Pak Galih</div>
-                                        <div className="font-bold text-gray-800 text-lg">Warung Galih</div>
-                                    </div>
-                                    <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                                        <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
-                                    </div>
-                                </div>
+                    {/* Subtitle */}
+                    <p className="text-lg md:text-xl text-zinc-500 max-w-2xl leading-relaxed font-light">
+                        Catat transaksi, kelola stok, dan laporan otomatis tanpa ribet. Fokus kembangkan usaha, biar kami yang urus hitungannya.
+                    </p>
 
-                                {/* App Content */}
-                                <div className="p-5 space-y-5 flex-1 bg-gray-50/50">
-                                    <div className="bg-brand-orange/10 p-5 rounded-2xl border border-brand-orange/10">
-                                        <div className="text-xs text-brand-orange font-bold uppercase tracking-wider mb-1">Total Penjualan</div>
-                                        <div className="text-3xl font-bold text-gray-900">Rp 1.250k</div>
-                                    </div>
+                    {/* CTAs */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a
+                            href="#cta"
+                            className="group inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-white rounded-full transition-all hover:shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:scale-105"
+                        >
+                            Coba Gratis Sekarang
+                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                        <a
+                            href="#portfolio"
+                            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-zinc-300 border border-zinc-800 rounded-full hover:bg-zinc-900 hover:border-zinc-700 transition-all"
+                        >
+                            <Play className="mr-2 w-4 h-4 fill-current" />
+                            Lihat Portofolio
+                        </a>
+                    </div>
+                </div>
 
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div className="bg-white p-3 rounded-xl shadow-sm border border-gray-100 h-24 flex flex-col justify-center items-center gap-2">
-                                            <div className="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                            <div className="h-2 w-16 bg-gray-100 rounded"></div>
-                                        </div>
-                                        <div className="bg-white p-3 rounded-xl shadow-sm border border-gray-100 h-24 flex flex-col justify-center items-center gap-2">
-                                            <div className="w-8 h-8 bg-green-100 rounded-full"></div>
-                                            <div className="h-2 w-16 bg-gray-100 rounded"></div>
-                                        </div>
-                                        <div className="bg-white p-3 rounded-xl shadow-sm border border-gray-100 h-24 flex flex-col justify-center items-center gap-2">
-                                            <div className="w-8 h-8 bg-yellow-100 rounded-full"></div>
-                                            <div className="h-2 w-16 bg-gray-100 rounded"></div>
-                                        </div>
-                                        <div className="bg-white p-3 rounded-xl shadow-sm border border-gray-100 h-24 flex flex-col justify-center items-center gap-2">
-                                            <div className="w-8 h-8 bg-purple-100 rounded-full"></div>
-                                            <div className="h-2 w-16 bg-gray-100 rounded"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                {/* Dashboard Mockup */}
+                <div className="mt-24 relative mx-auto max-w-5xl">
+                    <div className="absolute -inset-4 bg-gradient-to-b from-white/5 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="relative bg-zinc-950 rounded-2xl border border-zinc-800/80 shadow-2xl overflow-hidden">
+                        {/* Title bar */}
+                        <div className="h-10 bg-zinc-900 border-b border-zinc-800 flex items-center px-4 gap-2">
+                            <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
+                            <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
+                            <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
+                            <span className="text-zinc-600 text-xs ml-4 font-mono">dashboard.warunggalih.com</span>
+                        </div>
 
-                                {/* Bottom nav */}
-                                <div className="h-20 bg-white border-t border-gray-100 flex justify-around items-center px-4 pb-2">
-                                    <div className="w-10 h-10 bg-brand-orange/20 rounded-xl flex items-center justify-center text-brand-orange">
-                                        ●
-                                    </div>
-                                    <div className="w-10 h-10 bg-transparent rounded-xl flex items-center justify-center text-gray-300">●</div>
-                                    <div className="w-10 h-10 bg-transparent rounded-xl flex items-center justify-center text-gray-300">●</div>
+                        <div className="p-6 md:p-8 grid md:grid-cols-3 gap-4">
+                            {/* Stat 1 */}
+                            <div className="bg-zinc-900/50 border border-zinc-800/50 p-6 rounded-xl">
+                                <div className="text-zinc-500 text-sm mb-2 font-medium">Total Penjualan</div>
+                                <div className="text-3xl font-bold text-white">Rp 12.5M</div>
+                                <div className="text-zinc-500 text-xs mt-3 flex items-center">
+                                    <span className="text-white font-medium">↑ 14.5%</span>&nbsp;dari bulan lalu
                                 </div>
-                                {/* Floating Add Button */}
-                                <div className="absolute bottom-24 right-5 w-14 h-14 bg-brand-green rounded-full shadow-xl shadow-green-500/30 flex items-center justify-center text-white text-3xl font-bold hover:scale-105 transition-transform cursor-pointer">
-                                    +
-                                </div>
+                            </div>
+                            {/* Stat 2 - Highlighted */}
+                            <div className="bg-white text-black p-6 rounded-xl">
+                                <div className="text-zinc-500 text-sm font-medium mb-2">Pesanan Masuk</div>
+                                <div className="text-4xl font-black">128</div>
+                                <div className="text-zinc-400 text-xs mt-3">Hari ini</div>
+                            </div>
+                            {/* Stat 3 */}
+                            <div className="bg-zinc-900/50 border border-zinc-800/50 p-6 rounded-xl">
+                                <div className="text-zinc-500 text-sm mb-2 font-medium">Stok Menipis</div>
+                                <div className="text-3xl font-bold text-white">12 Item</div>
+                                <div className="text-zinc-400 text-xs mt-3">Perlu restock segera</div>
                             </div>
                         </div>
                     </div>

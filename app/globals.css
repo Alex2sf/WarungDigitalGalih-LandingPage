@@ -2,9 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --primary-orange: #f97316;
-  --primary-green: #22c55e;
+  --foreground: #0a0a0a;
 }
 
 @theme inline {
@@ -12,8 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
-  --color-brand-orange: var(--primary-orange);
-  --color-brand-green: var(--primary-green);
+  --color-brand: #0a0a0a;
+  --color-accent: #404040;
 }
 
 html,
@@ -26,4 +24,27 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+/* Selection color */
+::selection {
+  background: #333;
+  color: #fff;
 }

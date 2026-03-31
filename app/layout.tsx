@@ -9,14 +9,14 @@ const inter = Inter({
 });
 
 const poppins = Poppins({
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-poppins",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Warung Digital Galih - Kasir Digital Simpel",
+  title: "WarungGalih — Kasir Digital Simpel untuk UMKM",
   description: "Aplikasi kasir digital simpel untuk warung dan kedai UMKM. Catat transaksi, kelola stok, dan laporan otomatis.",
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="id" className="scroll-smooth">
       <body
         suppressHydrationWarning
-        className={`${inter.variable} ${poppins.variable} antialiased font-sans bg-slate-50 text-slate-900`}
+        className={`${inter.variable} ${poppins.variable} antialiased font-sans bg-black text-white`}
       >
         {children}
       </body>
